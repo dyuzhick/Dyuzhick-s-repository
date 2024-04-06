@@ -1,3 +1,4 @@
+
 @font-face{
     font-family: 'RobotoBlack';
     src: url('./fonts/Roboto-Black.ttf');
@@ -35,49 +36,47 @@
     font-style: normal;
 }
 
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 
 nav {
-    border-bottom: 2px solid #7A7A7A;
+    border-bottom: 1px solid #7A7A7A;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 section {
     border-bottom: 1px solid #7A7A7A;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 ul {
-    display: inline-block;
+    display: flex;
 }
-
-ul.left {
-    position: absolute;
-    left: 0;
-}
-ul.right {
-    position: absolute;
-    right: 0;
-}
-
 
 li {
-    display: inline-block;
+    display: flex;
 }
 .li {
     font-family: RobotoBlack;
     font-size: 14px;
-    color: #8a8787;
-    margin-left: 20px
-    
+    color: #7A7A7A;
+    margin-left: 18px
 }
 
 .lists {
-   margin-bottom: 10px;
+   margin-bottom: 50px;
 }
 
 .support {
-    display: inline-block;
-    position: absolute;
+    display: inline;
+    margin-left: 675px;
     right: 0;
-    
+	margin-top: 15px;
 }
 
 .title {
@@ -95,44 +94,41 @@ li {
 
 .header-span {
     font-family: RobotoRegular;
-    font-size: 16px;
+    font-size: 14px;
     color: #434A5C;
-    margin-left: 16px;
+    margin-left: 12px;
+	margin-top: 15px;
 }
 
 .support-link {
     font-family: RobotoBlack;
-    font-size: 16px;
+    font-size: 14px;
     color: #576698;
 }
 
-.support-tel {
+.support-telephone {
     font-family: RobotoBlack;
-    font-size: 16px;
+    font-size: 14px;
     color: #484848;
 }
 
-section.img-sectio {
-    border-bottom: 16px solid #7A7A7A;
+section.img-sec {
+    border-bottom: 1px solid #7A7A7A;
     display: flex;
     justify-content: center;
 }
 
-.img-moutains {
+.img-mount {
     width: 1140px;
     height: 595px;
-    margin-top: 175px;
-    margin-left: 390px;
+    margin-top: 60px;
+    margin-left: 50px;
 }
 
-.img-div {
+.img-divik {
     margin-bottom: 30px;
 }
-.gt {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(0, 0, 0);
-}
+
 h2 {
     font-family: RobotoBlack;
     font-size: 64px;
@@ -140,7 +136,7 @@ h2 {
     line-height: 81.92px;
 }
 
-.span-title {
+.span-tit {
     font-family: RobotoBlack;
     font-size: 28px;
     color: #BF6024;
@@ -150,7 +146,7 @@ h2 {
 .img-in-list {
     width: 555px;
     height: 300px;
-    display: inline-block;
+    display: flex;
 }
 
 p {
@@ -160,22 +156,21 @@ p {
     line-height: 17.92px;
 }
 
-.gaiety-div {
-    display: inline-block;
-    margin-right: 45px;
-    margin-bottom: 55px;
-}
-
-.options-title-lux {
-    font-family: RobotoMedium;
-    font-size: 24px;
-    color: #FFFFFF;
-    line-height: 30.72px;
-    margin-bottom: 80px;
-    margin-left: 20px;
+.img-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .options-title {
+    font-family: RobotoMedium;
+    font-size: 24px;
+    color: #232121;
+    line-height: 30.72px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+}
+.options-tit {
     font-family: RobotoBlack;
     margin-top: 100px;
     margin-left: 130px;
@@ -185,8 +180,7 @@ p {
     color: #141414;
     line-height: 30.72px;
 }
-
-.options-lux {
+.options24 {
     background-image: url("./images/house2.png");
     width: 555px;
     height: 600px;
@@ -194,7 +188,6 @@ p {
     align-items: flex-end;
     justify-content: flex-start;
 }
-
 .options {
     background-color: #EAEDF2;
     width: 540px;
@@ -205,36 +198,31 @@ p {
     text-align: center; 
     margin-top: 15px;
 }
-
 .options-p {
     margin-top: 155px;
     display: flex;
     position: absolute;
     margin-left: 130px;
-    text-align: left;
-    
+    text-align: left; 
 }
-
-.lux-fill-button {
+.fill-button0 {
     font-family: RobotoMedium;
     font-size: 14px;
-    line-height: 17.92px;
+    line-height: 17.52px;
     color: #E5C6B2;
     background-color: #BF6024;
     width: 145px;
     height: 28px;
     position: absolute;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-bottom: 30px;
     border-radius: 50px;
     padding: 5px 13px 5px 13px;
     gap: 10px;
-    
 }
-
 .fill-button {
     font-family: RobotoMedium;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 17.92px;
     color: #E5C6B2;
     background-color: #BF6024;
@@ -266,7 +254,7 @@ p {
     align-self: flex-start;
 }
 
-.lux-nofill-button {
+.nofill-button0 {
     font-family: RobotoMedium;
     font-size: 14px;
     line-height: 17.92px;
@@ -300,46 +288,36 @@ p {
     gap: 10px;
 }
 
-.class-options {
-    margin-left: 1%;
-}
 
-.class-options-lux {
+.options-cl {
     display: inline-block;
 }
 .options-cont {
     display: flex;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 
 }
 
-.p-footer {
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.footer {
     font-family: MontserratMedium;
-    font-size: 16px;
+    font-size: 14px;
     color: #424242;
-    line-height: 18.5px;
+    line-height: 18.2px;
 }
 
 .a-footer {
     font-family: MontserratMedium;
-    font-size: 16px;
+    font-size: 14px;
     color: #424242;
-    line-height: 18.5px;
-}
-
-.first-footer-div {
-    display: inline-block;
-    left: 0;
-
-}
-.second-footer-div {
-    display: inline-block;
-    margin-left: 200px;
-    
-}
-.thrid-footer-div {
-    display: inline-block;
-    right: 0;
-    margin-left: 200px;
+    line-height: 18.2px;
 }
